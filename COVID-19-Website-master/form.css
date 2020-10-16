@@ -1,0 +1,68 @@
+.container {
+    height: 100%;
+    color: red;
+  }
+  #navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 1em;
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+  
+  #navbar ul li a:hover {
+    border-bottom: 3px solid #fff;
+  }
+  body {
+    background: url("formcoronaImage.jpeg");
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  label {
+    color: yellow;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  input {
+    line-height: 200%;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }

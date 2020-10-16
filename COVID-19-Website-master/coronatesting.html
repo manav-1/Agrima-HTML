@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="navbar">
+  <div class="container">
+    <ul>
+      <li><a href="home.html">Home</a></li>	 
+		  <li><a href="index.html">Timeline</a></li>
+		  <li><a href="coronatesting.html">Corona Testing</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+	<h1>Information Form</h1>
+
+<form id ="testForm">
+  <div class="flex-container">
+  <div>
+  <p>
+    <label>
+      Full Name:<br></label>
+    <input type="text" placeholder="Enter Name" id="name">
+  </p>
+  <p>
+    <label>
+      Phone Number:<br>
+    <input type="number" placeholder="123456789" id="mobile">
+    </label>
+  </p>
+    <p>
+    <label>
+      Age:<br>
+    <input type="number" placeholder="1-100" id="age">
+    </label>
+  </p>
+  <p>
+    <label>
+      Email:<br>
+    <input type="email" placeholder="something@email.com" id="email">
+    </label>
+  </p>
+  <p>
+    <label>
+      Profession:<br>
+    <input type="text" placeholder="student/private/doctor" id="profession">
+    </label>
+  </p>
+  <p>
+    <label>
+      Date Of Birth:<br></label>
+    <input type="date" id ="dateofbirth">
+  </p>
+  <p>
+    <label>
+      State:<br></label>
+    <input type="text" placeholder="Enter State" id="state">
+  </p>
+  <p>
+    <label>
+      Any of the following country travelled outside in the last 30 days ?<br> </label>
+      <select id="travel">
+					<option value="" disabled selected>City</option>
+          <option>China</option>
+          <option>UK</option>
+          <option>USA</option>
+          <option>Thailand</option>
+          <option>Nepal</option>
+          <option>Canada</option>
+          <option>None of These</option>
+      </select>
+
+  </p>
+  <p>
+		<label>Ready to volunteer in the time of need ?<br> </label>
+			<input type="radio" name="radio" value="Yes" id="volunteer"><label for="rad1">Yes</label><br>
+			<input type="radio" name="radio" value="No" id="novolunteer"><label for="rad2">No</label><br>
+  </p>
+  <p>
+    	<label>Do you have any of the following symptoms ?<br> </label>
+    <input type="checkbox" name="symptoms" value="Fever" id="cb1"><label for="cb1">Fever</label><br>
+		<input type="checkbox" name="symptoms" value="Dry Cough" id="cb2"><label for="cb2">Dry Cough</label><br>
+		<input type="checkbox" name="symptoms" value="Cold" id="cb3"><label for="cb3">Cold</label><br>
+    <input type="checkbox" name="symptoms" value="Breathing Issues" id="cb4"><label for="cb3">Breathing Issues</label><br>
+    <input type="checkbox" name="symptoms" value="Chest Pain" id="cb5"><label for="cb3">Chest Pain</label><br>
+  </p>
+  <p><br><br>
+    <input type="submit" onclick="outputvalue()">
+		<input type="reset">
+  </p>
+  <p style="color:white">Testing Centers around you: <span id="result"></span><br>
+</div>
+</form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+
+<script  src="./testingScript.js"></script>
+
+</body>
+</html>

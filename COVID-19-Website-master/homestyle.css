@@ -1,0 +1,110 @@
+
+
+ul {
+ 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.875em;
+  text-decoration: none;
+  padding: 1em;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+ul li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.header {
+  padding: 20px;
+  height: 100vh;
+  background: url("Coronavirus-1.jpg") no-repeat  center;
+  background-size: cover;
+  position: relative;
+}
+.header h1 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.header .content {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+
+body {
+  background-image: url("coronavirus-2.jpeg");
+}
+
+.flex1 {
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+   background: linear-gradient(to bottom, #16222a, #4e4376);
+}
+
+.flex1 h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.flex1 p {
+  font-weight: 400%;
+  font-family: serif;
+  font-size: 150%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.flex2 {
+
+  display: flex;
+  color: white;
+  padding: 100px 150px 150px 100px;
+  position: center;
+   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}
+
+.flex2 h1 {
+  font-size: 325%;
+  text-align: center;
+}
+.flex2 p {
+  font-weight: 400%;
+  font-family: sans-serif;
+  font-size: 150%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.flex {
+  display: flex;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  position: center;
+}
+
+
+.flex--vertical {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  padding-right: 3%;
+}
